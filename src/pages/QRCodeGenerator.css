@@ -1,0 +1,103 @@
+.generator-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e2e2e2, #f3f4f6);
+    padding: 16px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .input-field {
+    margin-bottom: 16px;
+    width: 80%;
+    max-width: 500px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 12px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .sc-ion-input-md{
+    margin: 5px;
+  }
+  
+  .input-field:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  .generate-button {
+    --background: #007bff;
+    --color: #fff;
+    margin-top: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .generate-button:hover {
+    --background: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  .generate-button:active {
+    --background: #003d7a;
+    transform: translateY(1px);
+  }
+  
+  .qr-card {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    animation: popIn 0.6s ease-out;
+  }
+  
+  @keyframes popIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
+  .qr-image {
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+  }
+  
+  .qr-image:hover {
+    transform: scale(1.1);
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 24px;
+    width: 48px;
+    height: 48px;
+    --background: #007bff;
+    --color: #fff;
+    --border-radius: 50%;
+    --padding-start: 0;
+    --padding-end: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .back-button:hover {
+    --background: #c6ced6;
+    --color: #fff;
+    transform: scale(1.1);
+  }
+ 
+  
